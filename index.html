@@ -11,7 +11,7 @@
         <section class="input">
             <div>
                 <div class="weather-location" contenteditable>Alaska</div>
-                <button onclick="weatherForecast()">Get Weather</button>
+                <button onclick="weatherForecast(this)">Get Weather</button>
             </div>
         </section>
         <section class="weather">
@@ -50,12 +50,42 @@
                 <div id="visibility">N/A</div>
             </div>
             <hr />
-
+            <section class="weather-2">
+                <div id="x">
+                    <p class="text-large temp">
+                        00°
+                        <span
+                            id="condition"
+                            class="condition text-bold text-normal"
+                            >N/A</span
+                        >
+                    </p>
+                </div>
+                <div>
+                    <p>Feels like <span id="flc">N/A</span>° celsuis</p>
+                    <p>Feels like <span id="flf">N/A</span>° fahrenheit</p>
+                </div>
+            </section>
         </section>
         <section>
-          <div id="country" class="country text-bold">
-            N/A
-          </div>
+            <div id="country" class="country text-bold">N/A</div>
+            <div class="loading">
+                <div>
+                    <div class="loader"></div>
+                    <p>loading</p>
+                </div>
+            </div>
+            <div class="error">
+              And error occurred... this might be on our own end. Perhaps you're
+              offline or typed a wrong region...
+            </div>
+        </section>
+        <section class="footer">
+                
+          <p>By Igwe Fran6</p>
+          <p><a class="github"
+          href="https://github.com/Igwefran6/weather-forecaster">source code on
+          github</a></p>
         </section>
     </body>
 </html>
