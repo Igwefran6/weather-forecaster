@@ -1,13 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js"></script>
-  <title>Weather Forecaster</title>
-</head>
-<body>
-	
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="js/index.js" defer></script>
+        <title>Weather Forecaster</title>
+    </head>
+    <body>
+        <section class="input">
+            <div>
+                <div class="weather-location" contenteditable>Alaska</div>
+                <button onclick="weatherForecast()">Get Weather</button>
+            </div>
+        </section>
+        <section class="weather">
+            <div class="date-container">
+                <div class="day text-bold"></div>
+                <div class="date text-bold">Monday</div>
+            </div>
+            <hr />
+            <div>
+                <div>Wind</div>
+                <div id="wind">N/A</div>
+            </div>
+            <hr />
+            <div>
+                <div>Wind direction</div>
+                <div id="wind-direction">N/A</div>
+            </div>
+            <hr />
+            <div>
+                <div>Humidity</div>
+                <div id="humidity">N/A</div>
+            </div>
+            <hr />
+            <div>
+                <div>Pressure</div>
+                <div id="pressure">N/A</div>
+            </div>
+            <hr />
+            <div>
+                <div>UV index</div>
+                <div id="uv">N/A</div>
+            </div>
+            <hr />
+            <div>
+                <div>Visibility</div>
+                <div id="visibility">N/A</div>
+            </div>
+            <hr />
+
+        </section>
+        <section>
+          <div id="country" class="country text-bold">
+            N/A
+          </div>
+        </section>
+    </body>
 </html>
